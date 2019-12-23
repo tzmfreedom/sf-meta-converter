@@ -141,3 +141,8 @@ output
 ```
 Hello Account
 ```
+
+you can also specify URL as template.
+```
+$ sfmconv -T Account -t "https://httpbin.org/get?q=%3C%=%20name%20%%3E"
+```
