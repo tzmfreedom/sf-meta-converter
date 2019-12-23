@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import SObjectCreator from "./sobject-creator";
 import { Command } from 'commander'
 import { MetadataRetriever, Metadata } from "./metadata-retriever"

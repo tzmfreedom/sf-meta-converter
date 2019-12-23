@@ -2,7 +2,9 @@
   "name": "sf-metadata-converter",
   "version": "0.1.0",
   "description": "Salesforce SObject Metadata Converter",
-  "main": "dist/index.js",
+  "bin": {
+    "sfmconv": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
@@ -11,6 +13,9 @@
   "files": [
     "dist",
     "templates"
+  ],
+  "keywords": [
+    "salesforce"
   ],
   "author": "Makoto Tajitsu",
   "license": "MIT",
