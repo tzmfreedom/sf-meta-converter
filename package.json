@@ -1,6 +1,6 @@
 {
   "name": "sf-metadata-converter",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Salesforce SObject Metadata Converter",
   "bin": {
     "sfmconv": "dist/index.js"
