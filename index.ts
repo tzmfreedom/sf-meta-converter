@@ -18,7 +18,7 @@ const program = new Command()
 program
   .version(version)
   .option('-d, --debug', 'output extra debugging')
-  .option('-t, --template <template>', 'ejs template', './templates/sobject.js.ejs')
+  .option('-t, --template <template>', 'ejs template')
   .option('-T, --type <type>', 'SObject Type (e.g. Account)')
 program.parse(process.argv)
 
