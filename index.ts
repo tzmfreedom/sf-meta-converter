@@ -34,10 +34,12 @@ const templateAlias: any = {
   const retriever = new MetadataRetriever(user!, pass!)
   const metadata = await retriever.retrieve(program.type)
   const creator = new SObjectCreator()
-  let template = templateAlias.js
-  if (templateAlias[program.template]) {
-    template = templateAlias[program.template]
-  }
+  let template = (() => {
+    if (program.template) {
+      return templateAlias[program.template] ? templateAlias[program.template] : program.template
+    }
+    return templateAlias.js
+  })()
   const str = await creator.convert(template, metadata)
   console.log(str)
 })()
