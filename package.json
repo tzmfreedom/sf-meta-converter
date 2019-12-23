@@ -28,7 +28,8 @@
   "dependencies": {
     "commander": "^4.0.1",
     "ejs": "^3.0.1",
-    "jsforce": "^1.9.3"
+    "jsforce": "^1.9.3",
+    "request-promise": "^4.2.5"
   },
   "devDependencies": {
     "@types/ejs": "^3.0.0",
