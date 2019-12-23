@@ -1,0 +1,27 @@
+{
+  "name": "sf-metadata-converter",
+  "version": "0.1.0",
+  "description": "Salesforce SObject Metadata Converter",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "author": "Makoto Tajitsu",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^4.0.1",
+    "ejs": "^3.0.1",
+    "jsforce": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/ejs": "^3.0.0",
+    "@types/node": "^12.12.21",
+    "typescript": "^3.7.4"
+  }
+}

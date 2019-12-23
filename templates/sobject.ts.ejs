@@ -1,0 +1,9 @@
+interface AccountProperty {
+    <%= fields.map((f) => `${f.name}: ${f.type}`).join("\n    ") %>
+}
+
+export default class <%= name %> {
+    constructor(params: AccountProperty) {
+        <%= fields.map((f) => `this.${f.name} = params.${f.name};`).join("\n        ") %>
+    }
+}

@@ -1,0 +1,5 @@
+export default class <%= name %> {
+    constructor(params) {
+        <%= fields.map((f) => `this.${f.name} = params.${f.name};`).join("\n        ") %>
+    }
+}
