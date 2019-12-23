@@ -15,9 +15,15 @@
     "templates"
   ],
   "keywords": [
-    "salesforce"
+    "salesforce",
+    "salesforce.com"
   ],
-  "author": "Makoto Tajitsu",
+  "homepage": "http://github.com/tzmfreedom/sf-meta-converter",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tzmfreedom/sf-meta-converter.git"
+  },
+  "author": "Makoto Tajitsu <makoto_tajitsu@hotmail.co.jp>",
   "license": "MIT",
   "dependencies": {
     "commander": "^4.0.1",
